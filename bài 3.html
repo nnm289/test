@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/103d7ccca3.js"></script>
+
+    <style>
+        .title {
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .header span {
+            display: inline;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        .active {
+            background-color: rgb(173, 173, 211);
+        }
+
+
+        .container {
+            padding-left: 30px;
+
+        }
+
+        .col {
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px
+        }
+
+        img {
+            height: 120px;
+            border-radius: 100%;
+
+        }
+
+        .features {
+            color: blue;
+            border: solid blue 1px;
+            margin-left: 30px;
+            line-height: 20px;
+            font-size: 14px;
+            border-radius: 20px;
+            padding: 5px 10px;
+            width: max-content;
+
+        }
+
+        .col-content {
+            margin-left: 10px;
+        }
+
+        .row {
+            margin-top: 80px;
+        }
+
+        .activePlayer {
+            border: solid 1px rgb(173, 173, 211);
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+
+        body {
+            background-color: rgb(231, 231, 249);
+
+        }
+
+        .bodyContent {
+margin: 100px 100px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            background-color: white;
+            border: solid rgb(173, 173, 211) 1px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bodyContent">
+        <h3 class="title">Users</h3>
+        <div class="header">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search" style="margin-left: 40px;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="container-fluid">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reputation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">New users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Voters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Editors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Moderators</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/img1.png" alt="">
+                    <div class="col-content">
+                        <h4>Mohamed Salah</h4>
+                        <p>Liverpool</p>
+                        <div style="display: flex; justify-content: baseline;">
+                            <p class="features">Speed</p>
+                            <p class="features">Shooting</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col activePlayer">
+                    <img src="./images/img2.png" alt="">
+                    <div class="col-content ">
+                        <h4>Enzo Fernandez</h4>
+                        <p>Chelsea</p>
+                        <div style="display: flex; justify-content: baseline;">
+                            <p class="features">Passing</p>
+                            <p class="features">Shooting</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <img src="./images/img3.png" alt="">
+                    <div class="col-content">
+                        <h4>Erling Haaland</h4>
+                        <p>Manchester City</p>
+                        <div style="display: flex; justify-content: baseline;">
+                            <p class="features">Speed</p>
+                            <p class="features">Shooting</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="./images/img4.png" alt="">
+                        <div class="col-content">
+                            <h4>Bukayo Saka</h4>
+                            <p>Arsenal</p>
+                            <div style="display: flex; justify-content: baseline;">
+                                <p class="features">Speed</p>
+                                <p class="features">Shooting</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <img src="./images/img5.png" alt="">
+                        <div class="col-content">
+                            <h4>Son Heung-min</h4>
+                            <p>Tottenham</p>
+                            <div style="display: flex; justify-content: baseline;">
+                                <p class="features">Speed</p>
+                                <p class="features">Shooting</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <img src="./images/img6.png" alt="">
+                        <div class="col-content">
+                            <h4>Bruno Fernandes</h4>
+                            <p>Manchester United</p>
+                            <div style="display: flex; justify-content: baseline;">
+                                <p class="features">Passing</p>
+                                <p class="features">Captain</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+</body>
+
+</html>
